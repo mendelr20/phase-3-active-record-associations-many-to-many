@@ -1,3 +1,4 @@
 class Game < ActiveRecord::Base
   has_many :reviews
-end
+  has_many :users, through: :reviews
+end 
